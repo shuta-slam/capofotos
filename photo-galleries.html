@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CapoFotos - Photo Galleries</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Photo Galleries</h1>
+      <input type="text" id="search" placeholder="Search galleries" />
+      <div id="galleries">
+        <div class="gallery" onclick="openGallery('gallery1')">
+          <h2>Gallery 1</h2>
+        </div>
+        <div class="gallery" onclick="openGallery('gallery2')">
+          <h2>Gallery 2</h2>
+        </div>
+        <!-- Add more galleries as needed -->
+      </div>
+    </div>
+    <script>
+      function openGallery(galleryId) {
+        window.location.href = "gallery-contents.html?gallery=" + galleryId;
+      }
+    </script>
+  </body>
+</html>
