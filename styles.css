@@ -21,7 +21,7 @@ body {
 }
 
 .login-section {
-  flex: 1;
+  /*flex: 1;*/
   margin-right: 20px;
 }
 
